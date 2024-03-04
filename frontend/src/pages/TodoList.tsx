@@ -14,7 +14,7 @@ function TodoList() {
             <h1>Todo List</h1>
             <ul>
                 {todos.map((todo: { id: string; description: string; status:string }) => (
-                    <li key={todo.id}>{todo.description} - Status: {todo.status}</li>
+                    <li key={todo.id}>{todo.description} - Status: {todo.status} - <a href={`/todo/${todo.id}`}>View</a></li>
                 ))}
             </ul>
         </div>

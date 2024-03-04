@@ -2,6 +2,10 @@ import axios from "axios";
 
 export default class TodoService {
     getTodos() {
-        return axios.get('http://localhost:8080/api/todo');
+        return axios.get('/api/todo');
+    }
+
+    getByIdTodo(id: string) {
+        return axios.get('/api/todo/' + id);
     }
 }
