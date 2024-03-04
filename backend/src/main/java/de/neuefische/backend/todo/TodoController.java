@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/todo")
+@CrossOrigin
 class TodoController {
 
     private final TodoService todoService;

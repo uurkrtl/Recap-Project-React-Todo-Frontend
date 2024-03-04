@@ -8,8 +8,8 @@ function KartalTextInput({...props}) {
         <div>
             <FormField error={meta.touched && !!meta.error}>
                 <div className="ui labeled input">
-                    <div className="ui label label">{props.placeholder}</div>
-                    <input type={props.type} {...field} {...props} placeholder={props.placeholder}/>
+                    <div className="ui label label">{props.label}</div>
+                    <input type={props.type} {...field} {...props} placeholder={props.placeholder} value={props.value}/>
                 </div>
                 {meta.touched && meta.error ? (
                     <div className='ui pointing red basic label'>{meta.error}</div>
