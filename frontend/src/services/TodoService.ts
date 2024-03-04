@@ -8,4 +8,8 @@ export default class TodoService {
     getByIdTodo(id: string) {
         return axios.get('/api/todo/' + id);
     }
+
+    addTodo(todo: { description: string; status: string }) {
+        return axios.post('/api/todo', todo);
+    }
 }
